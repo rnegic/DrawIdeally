@@ -2,6 +2,13 @@
     "Index": {
         "page": {
             "welcome": "Вы больше не сможете рисовать без drawideally.app"
+        },
+        "nav": {
+            "brand": "drawideally",
+            "articles": "Статьи",
+            "gallery": "Галерея",
+            "templates": "Референсы",
+            "agreement": "Соглашение"
         }
     }
 }

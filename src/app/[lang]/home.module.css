@@ -1,0 +1,70 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1280px;
+  }
+
+.main {
+    margin-top: 140px;
+    display: flex;
+    gap: 55px;
+}
+
+.textCol {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.maintext {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.additionalText {
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.image {
+    width: 450px;
+    height: auto;
+}
+
+.gradientFirst {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #002ac4, #0575E6, #4776E6);
+    background-size: 400% 400%;
+    animation: animate 10s ease infinite;
+}
+
+.gradientSecond {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #3494E6, #CB80FF);
+    background-size: 400% 400%;
+    animation: animate 7s ease infinite;
+}
+
+@keyframes animate{
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}

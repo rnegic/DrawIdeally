@@ -1,0 +1,40 @@
+.sliderWrapper {
+  display: flex;
+  max-width: 1280px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.slider {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.sliderTrack {
+  -webkit-animation: scroll 10s linear infinite;
+  animation: scroll 10s linear infinite;
+  display: flex;
+  width: calc(500px * 6);
+}
+
+.slide {
+  width: 450px;
+  flex-shrink: 0;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-450px * 3)); 
+  }
+}

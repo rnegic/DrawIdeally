@@ -1,7 +1,22 @@
 {
     "Index": {
         "page": {
-            "welcome": "Don't ever start drawing without drawideally.app"
+            "dontever": "Don't ever",
+            "start": "start",
+            "welcomePartTwo": "drawing without",
+            "draw": "draw",
+            "idea": "idea",
+            "rest": "lly.app",
+            "welcomePartFour": "Millions of ideas, color palettes,",
+            "welcomePartFive": "references, inspirations for you. Free.",
+            "buttonStart": "Start Now"
+        },
+        "nav": {
+            "brand": "drawideally",
+            "articles": "Articles",
+            "gallery": "Gallery",
+            "templates": "Templates",
+            "agreement": "Agreement"
         }
     }
 }
