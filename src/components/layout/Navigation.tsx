@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslations } from "next-intl";
 
 const Navigation = () => {
@@ -7,7 +8,8 @@ const Navigation = () => {
     return (
         <nav className="flex h-24">
             <div className="max-w-5xl container mx-auto flex justify-between items-center">
-                <div className="text-2xl font-bold">
+                <div className="flex gap-3 text-xl">
+                    <Image src="/brush.png" alt='drawideally' width={30} height={30}/>
                     {t("nav.brand")}
                 </div>
                 <ul className="flex gap-8">

@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Button from "@/components/layout/Button";
 import styles from "./home.module.css";
+import classNames from 'classnames';
 import Image from "next/image";
 import Slider from "@/components/gallery/Slider";
 
@@ -28,11 +29,12 @@ export default function Home() {
           </div>
           <Button text={t("page.buttonStart")} />
         </div>
-        <Image src="/image.webp" alt="woman" width={500} height={500} />
+        <Image src="/woman.png" alt="woman" width={500} height={500} />
       </main>
       <div className="m-10 flex">
         <Slider />
       </div>
+      <h1 className={classNames(styles.sliderText, styles.gradientFirst)}>{t("page.sliderText")}</h1>
     </div>
   );
 }
