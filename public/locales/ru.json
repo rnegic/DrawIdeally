@@ -1,7 +1,16 @@
 {
     "Index": {
         "page": {
-            "welcome": "Вы больше не сможете рисовать без drawideally.app"
+            "dontever": "Вы",
+            "start": "не сможете",
+            "welcomePartTwo": "рисовать без",
+            "draw": "draw",
+            "idea": "idea",
+            "rest": "lly.app",
+            "welcomePartFour": "Миллионы идей, цветовых палитр,",
+            "welcomePartFive": "референсов, вдохновений для вас. Бесплатно.",
+            "buttonStart": "Начать сейчас",
+            "sliderText": "Вдохновляйтесь и улучшайте свои работы!"
         },
         "nav": {
             "brand": "drawideally",
@@ -9,6 +18,13 @@
             "gallery": "Галерея",
             "templates": "Референсы",
             "agreement": "Соглашение"
+        },
+        "generate": {
+            "title": "Генерация идей",
+            "slogan": "Сгенерируй первую идею прямо сейчас",
+            "descriptionOne": "Не знаешь что нарисовать?",
+            "descriptionTwo": "Выбери категорию ниже или просто сгенерируй случайную идею.",
+            "buttonRandom": "Сгенерировать"
         }
     }
 }

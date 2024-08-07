@@ -18,6 +18,13 @@
             "gallery": "Gallery",
             "templates": "Templates",
             "agreement": "Agreement"
+        },
+        "generate": {
+            "title": "Idea generation",
+            "slogan": "Generate your first idea right now",
+            "descriptionOne": "Don't know what to draw?",
+            "descriptionTwo": "Pick a category below or just generate a random idea.",
+            "buttonRandom": "Generate idea"
         }
     }
 }
