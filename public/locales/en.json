@@ -25,6 +25,16 @@
             "descriptionOne": "Don't know what to draw?",
             "descriptionTwo": "Pick a category below or just generate a random idea.",
             "buttonRandom": "Generate idea"
+        },
+        "categories": {
+            "nature": {
+                "title": "Nature",
+                "description": "Idea of nature"
+            },
+            "category2": {
+                "title": "",
+                "description": ""
+            }
         }
     }
 }

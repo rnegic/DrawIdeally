@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import React from "react";
 import styles from './styles.module.css';
 import Button from "@/components/layout/Button";
+import CategoryContainer from "@/components/generation/CategoryContainer";
 
 const GeneratePage = () => {
     const t = useTranslations("Index");
@@ -14,6 +15,7 @@ const GeneratePage = () => {
                 <h2>{t("generate.descriptionTwo")}</h2>
             </div>
             <Button text={t("generate.buttonRandom")}/>
+            <CategoryContainer/>
         </div>
     );
 }
