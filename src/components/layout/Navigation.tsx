@@ -9,7 +9,7 @@ const Navigation = () => {
         <nav className="flex h-24">
             <div className="max-w-5xl container mx-auto flex justify-between items-center">
                 <div className="flex gap-3 text-xl">
-                    <Image src="/brush.png" alt='drawideally' width={30} height={30}/>
+                    <Image src="/brush.png" alt='drawideally' width={500} height={500} className='size-7'/>
                     {t("nav.brand")}
                 </div>
                 <ul className="flex gap-8">

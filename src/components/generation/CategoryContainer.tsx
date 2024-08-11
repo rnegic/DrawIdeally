@@ -7,52 +7,52 @@ const CategoryContainer = () => {
     const t = useTranslations("Index");
     const CategoryArray = [
         {
-            "image": "/cards/nature.png",
+            "image": "/cards/nature.svg",
             "key": "nature"
         },
         {
-            "image": "",
-            "key": "nature"
+            "image": "/cards/portrait.png",
+            "key": "portrait"
         },
         {
-            "image": "",
-            "key": "nature"
+            "image": "/cards/architecture.png",
+            "key": "architecture"
         },
         {
-            "image": "",
-            "key": "nature"
+            "image": "/cards/adoptable.svg",
+            "key": "adoptables"
         },
         {
-            "image": "",
-            "key": "nature"
+            "image": "/cards/humanization.svg",
+            "key": "humanization"
         },
         {
-            "image": "",
-            "key": "nature"
+            "image": "/cards/anatomy.svg",
+            "key": "anatomy"
         },
         {
-            "image": "",
-            "key": "nature"
+            "image": "/cards/anime.svg",
+            "key": "anime"
         },
         {
-            "image": "",
-            "key": "nature"
+            "image": "/cards/furry.svg",
+            "key": "furry"
         },
         {
-            "image": "",
-            "key": "nature"
+            "image": "/cards/animal.svg",
+            "key": "animals"
         },
         {
-            "image": "",
-            "key": "nature"
+            "image": "/cards/plot",
+            "key": "plot"
         },
         {
-            "image": "",
-            "key": "nature"
+            "image": "/cards/mythology.svg",
+            "key": "mythology"
         },
         {
-            "image": "",
-            "key": "nature"
+            "image": "/cards/cyberpunk.png",
+            "key": "cyberpunk"
         },
     ];
     return (

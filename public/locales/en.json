@@ -31,8 +31,48 @@
                 "title": "Nature",
                 "description": "Idea of nature"
             },
-            "category2": {
-                "title": "",
+            "portrait": {
+                "title": "Portrait",
+                "description": ""
+            },
+            "architecture": {
+                "title": "Architecture",
+                "description": ""
+            },
+            "cyberpunk": {
+                "title": "Cyberpunk",
+                "description": ""
+            },
+            "adoptables": {
+                "title": "Adoptables",
+                "description": ""
+            },
+            "humanization": {
+                "title": "Humanization",
+                "description": ""
+            },
+            "anatomy": {
+                "title": "Anatomy",
+                "description": ""
+            },
+            "mythology": {
+                "title": "Mythology",
+                "description": ""
+            },
+            "furry": {
+                "title": "Furry",
+                "description": ""
+            },
+            "animals": {
+                "title": "Animals",
+                "description": ""
+            },
+            "plot": {
+                "title": "Plot in action",
+                "description": ""
+            },
+            "anime": {
+                "title": "Anime",
                 "description": ""
             }
         }

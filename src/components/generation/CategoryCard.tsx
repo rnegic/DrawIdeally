@@ -19,8 +19,8 @@ const CategoryCard = ({image, title, description}: CategoryCardProps) => {
         >
             <Image
                 src={image}
-                width={224}
-                height={150}
+                width={1024}
+                height={1024}
                 alt="Category Image"
                 className="object-cover"
             />

@@ -4,6 +4,7 @@ import styles from "./home.module.css";
 import classNames from 'classnames';
 import Image from "next/image";
 import Slider from "@/components/gallery/Slider";
+import Link from 'next/link';
 
 export default function Home() {
   const t = useTranslations("Index");
@@ -27,7 +28,9 @@ export default function Home() {
             <h3>{t("page.welcomePartFour")}</h3>
             <h3>{t("page.welcomePartFive")}</h3>
           </div>
-          <Button text={t("page.buttonStart")} />
+          <Link href="/en/generate">
+            <Button text={t("page.buttonStart")} />
+          </Link>
         </div>
         <Image src="/woman.png" alt="woman" width={500} height={500} />
       </main>
