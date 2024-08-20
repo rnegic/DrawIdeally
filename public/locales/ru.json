@@ -25,6 +25,56 @@
             "descriptionOne": "Не знаешь что нарисовать?",
             "descriptionTwo": "Выбери категорию ниже или просто сгенерируй случайную идею.",
             "buttonRandom": "Сгенерировать"
+        },
+        "categories": {
+            "nature": {
+                "title": "Природа",
+                "description": "Idea of nature"
+            },
+            "portrait": {
+                "title": "Портрет",
+                "description": ""
+            },
+            "architecture": {
+                "title": "Архитектура",
+                "description": ""
+            },
+            "cyberpunk": {
+                "title": "Киберпанк",
+                "description": ""
+            },
+            "adoptables": {
+                "title": "Адопты",
+                "description": ""
+            },
+            "humanization": {
+                "title": "Хуманизация",
+                "description": ""
+            },
+            "anatomy": {
+                "title": "Анатомия",
+                "description": ""
+            },
+            "mythology": {
+                "title": "Мифология",
+                "description": ""
+            },
+            "furry": {
+                "title": "Фурри",
+                "description": ""
+            },
+            "animals": {
+                "title": "Животные",
+                "description": ""
+            },
+            "fashion": {
+                "title": "Мода",
+                "description": ""
+            },
+            "anime": {
+                "title": "Аниме",
+                "description": ""
+            }
         }
     }
 }

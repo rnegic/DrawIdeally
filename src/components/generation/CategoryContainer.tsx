@@ -11,7 +11,7 @@ const CategoryContainer = () => {
             "key": "nature"
         },
         {
-            "image": "/cards/portrait.png",
+            "image": "/cards/portrait.svg",
             "key": "portrait"
         },
         {
@@ -43,8 +43,8 @@ const CategoryContainer = () => {
             "key": "animals"
         },
         {
-            "image": "/cards/plot",
-            "key": "plot"
+            "image": "/cards/fashion.svg",
+            "key": "fashion"
         },
         {
             "image": "/cards/mythology.svg",
