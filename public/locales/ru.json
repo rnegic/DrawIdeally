@@ -29,51 +29,51 @@
         "categories": {
             "nature": {
                 "title": "Природа",
-                "description": "Idea of nature"
+                "description": "Вдохновись идеями для рисования красивых пейзажей"
             },
             "portrait": {
                 "title": "Портрет",
-                "description": ""
+                "description": "Изобрази красоту человека на бумаге"
             },
             "architecture": {
                 "title": "Архитектура",
-                "description": ""
+                "description": "Создай умопомрачительные здания в перспективе"
             },
             "cyberpunk": {
                 "title": "Киберпанк",
-                "description": ""
+                "description": "Окунись в неоновое будущее технологий"
             },
             "adoptables": {
                 "title": "Адопты",
-                "description": ""
+                "description": "Создай уникальный адопт"
             },
             "humanization": {
                 "title": "Хуманизация",
-                "description": ""
+                "description": "Придай предметам человеческий облик"
             },
             "anatomy": {
                 "title": "Анатомия",
-                "description": ""
+                "description": "Тренируй анатомию, рисуя людей в сложных позах"
             },
             "mythology": {
                 "title": "Мифология",
-                "description": ""
+                "description": "Иллюстрируй легенды древних культур"
             },
             "furry": {
                 "title": "Фурри",
-                "description": ""
+                "description": "Раскрой потенциал творчества с помощью антропоморфных персонажей"
             },
             "animals": {
                 "title": "Животные",
-                "description": ""
+                "description": "Изобрази разнообразие животного мира"
             },
             "fashion": {
                 "title": "Мода",
-                "description": ""
+                "description": "Создавай современные наряды и образы"
             },
             "anime": {
                 "title": "Аниме",
-                "description": ""
+                "description": "Раскрой выразительный мир японской анимации"
             }
         }
     }

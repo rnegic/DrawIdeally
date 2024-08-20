@@ -29,51 +29,51 @@
         "categories": {
             "nature": {
                 "title": "Nature",
-                "description": "Idea of nature"
+                "description": "Ideas for drawing beautiful sceneries"
             },
             "portrait": {
                 "title": "Portrait",
-                "description": ""
+                "description": "Capture the essence of a person on paper"
             },
             "architecture": {
                 "title": "Architecture",
-                "description": ""
+                "description": "Bring buildings and structures to life with intricate details"
             },
             "cyberpunk": {
                 "title": "Cyberpunk",
-                "description": ""
+                "description": "Dive into a neon-drenched future filled with technology"
             },
             "adoptables": {
                 "title": "Adoptables",
-                "description": ""
+                "description": "Create unique characters waiting to find their forever homes"
             },
             "humanization": {
                 "title": "Humanization",
-                "description": ""
+                "description": "Give inanimate objects and concepts a human touch"
             },
             "anatomy": {
                 "title": "Anatomy",
-                "description": ""
+                "description": "Explore the intricacies of the human (or animal) form"
             },
             "mythology": {
                 "title": "Mythology",
-                "description": ""
+                "description": "Illustrate the legends and lore of ancient cultures"
             },
             "furry": {
                 "title": "Furry",
-                "description": ""
+                "description": "Unleash your creativity with anthropomorphic animal characters"
             },
             "animals": {
                 "title": "Animals",
-                "description": ""
+                "description": "Celebrate the beauty and diversity of the animal kingdom"
             },
             "fashion": {
                 "title": "Fashion",
-                "description": ""
+                "description": "Design cutting-edge outfits and stylish ensembles"
             },
             "anime": {
                 "title": "Anime",
-                "description": ""
+                "description": "Embrace the dynamic and expressive world of Japanese animation"
             }
         }
     }

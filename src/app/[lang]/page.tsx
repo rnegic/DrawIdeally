@@ -5,9 +5,11 @@ import classNames from 'classnames';
 import Image from "next/image";
 import Slider from "@/components/gallery/Slider";
 import Link from 'next/link';
+import { useLocale } from "next-intl";
 
 export default function Home() {
   const t = useTranslations("Index");
+  const locale = useLocale();
   return (
     <div className={styles.wrapper}>
       <main className={styles.main}>
@@ -28,7 +30,7 @@ export default function Home() {
             <h3>{t("page.welcomePartFour")}</h3>
             <h3>{t("page.welcomePartFive")}</h3>
           </div>
-          <Link href="/en/generate">
+          <Link href={`/${locale}/generate`}>
             <Button text={t("page.buttonStart")} />
           </Link>
         </div>
