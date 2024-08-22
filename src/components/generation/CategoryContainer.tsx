@@ -68,6 +68,7 @@ const CategoryContainer = () => {
                         image={category.image}
                         title={title}
                         description={description}
+                        categoryKey={category.key}
                     />
                 );
             })}
