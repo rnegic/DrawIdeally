@@ -1,32 +1,25 @@
 'use client';
 
-import ideasEnglish from '@/api/ideasEnglish';
-import ideasRussian from '@/api/ideasRussian';
 import { useTranslations } from "next-intl";
 import useIdeaStore from '../../store/IdeaStore';
-import useLocaleStore from '../../store/LocaleStore';
+import generateIdea from '@/utils/GenerateIdea';
+import useCategoryStore from '../../store/CategoryStore';
 
-interface GenerateButtonProps {
-    category: string;
-}
-
-const GenerateButton = ({ category }: GenerateButtonProps) => {
+const GenerateButton = () => {
     const t = useTranslations("Index");
-
     const setGeneratedIdea = useIdeaStore((state) => state.setGeneratedIdea);
-    const locale = useLocaleStore((state) => state.locale);
+    const category = useCategoryStore((state) => state.category);
 
     const handleClick = () => {
-        const rnd = Math.floor(Math.random() * 10);
-
-        const ideas = locale === "en" ? ideasEnglish : ideasRussian;
-        const newIdea = ideas[category][rnd];
-        setGeneratedIdea(newIdea);
+        if (category) {
+            const newIdea = generateIdea(category);
+            setGeneratedIdea(newIdea);
+        }
     };
 
     return (
         <div>
-            <button onClick={handleClick}>{t("generate.buttonRandom")}</button>
+            <button className='mt-4 w-36 h-8 shadow-2xl rounded-2xl bg-smallButtonBg text-slate-800' onClick={handleClick}>{t("generate.buttonRandom")}</button>
         </div>
     );
 };

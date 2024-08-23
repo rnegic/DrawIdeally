@@ -37,7 +37,7 @@
             },
             "architecture": {
                 "title": "Architecture",
-                "description": "Bring buildings and structures to life with intricate details"
+                "description": "Bring buildings and structures to life"
             },
             "cyberpunk": {
                 "title": "Cyberpunk",
@@ -45,7 +45,7 @@
             },
             "adoptables": {
                 "title": "Adoptables",
-                "description": "Create unique characters waiting to find their forever homes"
+                "description": "Create unique characters waiting to find their homes"
             },
             "humanization": {
                 "title": "Humanization",
@@ -61,11 +61,11 @@
             },
             "furry": {
                 "title": "Furry",
-                "description": "Unleash your creativity with anthropomorphic animal characters"
+                "description": "Unleash your creativity with anthropomorphic characters"
             },
             "animals": {
                 "title": "Animals",
-                "description": "Celebrate the beauty and diversity of the animal kingdom"
+                "description": "Celebrate the beauty of the animal kingdom"
             },
             "fashion": {
                 "title": "Fashion",
@@ -73,7 +73,7 @@
             },
             "anime": {
                 "title": "Anime",
-                "description": "Embrace the dynamic and expressive world of Japanese animation"
+                "description": "Embrace the dynamic world of Japanese animation"
             }
         }
     }

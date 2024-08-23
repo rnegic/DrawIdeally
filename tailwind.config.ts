@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         buttonBg: "#0062ff",
+        smallButtonBg: "#f0f6ff",
       },
     },
   },
