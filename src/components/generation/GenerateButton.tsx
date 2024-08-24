@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import useIdeaStore from '../../store/IdeaStore';
-import generateIdea from '@/utils/GenerateIdea';
+import generateIdea from '@/utils/generateIdea';
 import useCategoryStore from '../../store/CategoryStore';
 
 const GenerateButton = () => {

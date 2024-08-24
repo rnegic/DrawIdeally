@@ -56,7 +56,7 @@ const CategoryContainer = () => {
         },
     ];
     return (
-        <div className="grid grid-cols-4 gap-4 mt-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-16">
             {CategoryArray.map((category, idx) => {
 
                 const title = t(`categories.${category.key}.title`);

@@ -3,7 +3,6 @@
 import Image from "next/image";
 import GenerateButton from "./GenerateButton";
 import useCategoryStore from '../../store/CategoryStore';
-import useIdeaStore from '@/store/IdeaStore';
 
 interface CategoryCardProps {
     image: string;

@@ -41,7 +41,9 @@ const GeneratePage = () => {
                     <h3 className={styles.title}>{messages.Index.generate.title}</h3>
                     <h1 className={styles.slogan}>{messages.Index.generate.slogan}</h1>
                     {generatedIdea ? (
-                        <h2>{generatedIdea}</h2>
+                        <div className={styles.movingContainer}>
+                            <h2 className={styles.idea}>{generatedIdea}</h2>
+                        </div>
                     ) : (
                         <div className={styles.description}>
                             <h2>{messages.Index.generate.descriptionOne}</h2>

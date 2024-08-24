@@ -3,17 +3,21 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
+import MobileNavigation from "@/components/layout/MobileNavigation";
 
 const Navigation = () => {
     const t = useTranslations("Index");
+
     return (
         <nav className="flex h-24">
             <div className="max-w-5xl container mx-auto flex justify-between items-center">
-                <div className="flex gap-3 text-xl">
-                    <Image src="/brush.png" alt='drawideally' width={500} height={500} className='size-7' />
-                    {t("nav.brand")}
-                </div>
-                <ul className="flex gap-8">
+                <Link href="/">
+                    <div className="flex gap-3 text-xl">
+                        <Image src="/brush.png" alt='drawideally' width={500} height={500} className='w-7 h-7' />
+                        {t("nav.brand")}
+                    </div>
+                </Link>
+                <ul className="hidden md:flex gap-8">
                     <li>
                         <Link href="/articles">
                             {t("nav.articles")}
@@ -38,9 +42,13 @@ const Navigation = () => {
                         <LanguageSwitcher />
                     </li>
                 </ul>
+
+                <div className="md:hidden">
+                    <MobileNavigation />
+                </div>
             </div>
         </nav>
     );
-}
+};
 
 export default Navigation;
