@@ -8,6 +8,15 @@ import useIdeaStore from '../../../store/IdeaStore';
 import { NextIntlClientProvider } from 'next-intl';
 import { usePathname } from 'next/navigation';
 
+type Messages = {
+    Index: {
+      generate: {
+        title: string;
+        slogan: string;
+      };
+    };
+};
+
 const GeneratePage = () => {
     const pathname = usePathname();
     const [messages, setMessages] = useState(null);
@@ -38,19 +47,19 @@ const GeneratePage = () => {
         <div className={styles.container}>
             {messages ? (
                 <NextIntlClientProvider locale={locale} messages={messages}>
-                    <h3 className={styles.title}>{messages.Index.generate.title}</h3>
-                    <h1 className={styles.slogan}>{messages.Index.generate.slogan}</h1>
+                    <h3 className={styles.title}>{(messages as any).Index.generate.title}</h3>
+                    <h1 className={styles.slogan}>{(messages as any).Index.generate.slogan}</h1>
                     {generatedIdea ? (
                         <div className={styles.movingContainer}>
                             <h2 className={styles.idea}>{generatedIdea}</h2>
                         </div>
                     ) : (
                         <div className={styles.description}>
-                            <h2>{messages.Index.generate.descriptionOne}</h2>
-                            <h2>{messages.Index.generate.descriptionTwo}</h2>
+                            <h2>{(messages as any).Index.generate.descriptionOne}</h2>
+                            <h2>{(messages as any).Index.generate.descriptionTwo}</h2>
                         </div>
                     )}
-                    <GlowingButton text={messages.Index.generate.buttonRandom} />
+                    <GlowingButton text={(messages as any).Index.generate.buttonRandom} />
                     <CategoryContainer />
                 </NextIntlClientProvider>
             ) : (
