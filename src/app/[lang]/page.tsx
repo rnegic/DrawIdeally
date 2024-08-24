@@ -34,9 +34,9 @@ export default function Home() {
             <Button text={t("page.buttonStart")} />
           </Link>
         </div>
-        <Image src="/woman.png" alt="woman" width={500} height={500} />
+        <Image src="/woman.png" alt="woman" width={500} height={500} className={styles.image} />
       </main>
-      <div className="m-10 flex">
+      <div className="my-10">
         <Slider />
       </div>
       <h1 className={classNames(styles.sliderText, styles.gradientFirst)}>{t("page.sliderText")}</h1>

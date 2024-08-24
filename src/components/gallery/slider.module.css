@@ -7,10 +7,8 @@
 }
 
 .slider {
-  width: 80%;
-  margin: auto;
+  width: 100%;
   overflow: hidden;
-  position: relative;
 }
 
 .sliderTrack {
@@ -34,7 +32,45 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(calc(-450px * 3)); 
+    transform: translateX(calc(-450px * 3));
+  }
+}
+
+@media (max-width: 1196px) {
+  .sliderWrapper {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sliderWrapper {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 690px) {
+  .sliderWrapper {
+    margin-top: 50px;
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 476px) {
+  .sliderWrapper {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 412px) {
+  .sliderWrapper {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sliderWrapper {
+    max-width: 350px;
   }
 }
