@@ -48,6 +48,7 @@
 
 .idea {
     position: relative;
+    text-align: center;
     z-index: 1;
     font-size: 24px;
 }

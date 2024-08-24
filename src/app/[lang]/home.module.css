@@ -44,7 +44,7 @@
 .gradientFirst {
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(45deg, #002ac4, #0575E6, #4776E6);
+    background-image: linear-gradient(45deg, #0027b6, #42c9ff, #4776E6);
     background-size: 400% 400%;
     animation: animate 10s ease infinite;
 }
