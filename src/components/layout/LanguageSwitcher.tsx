@@ -18,7 +18,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative inline-block text-left mt-0.5">
       <select
         className="p-0.5 text-sm focus:outline-none sm:w-auto"
         defaultValue={locales.find((locale) => pathname.includes(`/${locale}`)) || locales[0]}

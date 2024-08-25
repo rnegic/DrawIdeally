@@ -32,46 +32,46 @@ const MobileNavigation = () => {
     };
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div>...</div>;
     }
 
     return (
         <NextIntlClientProvider messages={messages} locale={locale}>
             <div className="relative">
+
                 <button
                     onClick={toggleMenu}
-                    className="focus:outline-none focus:ring focus:ring-gray-300 hover:ring hover:ring-gray-300 p-2 rounded-md"
+                    className="focus:outline-none p-1 rounded-md z-20 relative"
                     aria-expanded={isOpen}
                 >
-                    ☰
+                    {isOpen ? <span className="text-white">✕</span> : '☰'}
                 </button>
 
                 {isOpen && (
-                    <ul className="absolute right-0 top-full mt-2 p-4 bg-white shadow-lg rounded-2xl z-1">
-                        <li>
-                            <Link href="/articles" className="block py-2 px-4 hover:bg-gray-100 rounded-md" onClick={toggleMenu}>
-                                {(messages as any).nav?.articles || 'Articles'}
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/gallery" className="block py-2 px-4 hover:bg-gray-100 rounded-md" onClick={toggleMenu}>
-                                {(messages as any).nav?.gallery || 'Gallery'}
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/templates" className="block py-2 px-4 hover:bg-gray-100 rounded-md" onClick={toggleMenu}>
-                                {(messages as any).nav?.templates || 'Templates'}
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/agreement" className="block py-2 px-4 hover:bg-gray-100 rounded-md" onClick={toggleMenu}>
-                                {(messages as any).nav?.agreement || 'Agreement'}
-                            </Link>
-                        </li>
-                        <li className='block py-2 px-2'>
-                            <LanguageSwitcher />
-                        </li>
-                    </ul>
+                    <div className="fixed inset-0 bg-black bg-opacity-80 z-10 flex items-center justify-center">
+                        <ul className="text-center space-y-6 text-white text-2xl">
+                            <li>
+                                <Link href="/articles" className="block py-2 px-4" onClick={toggleMenu}>
+                                    {(messages as any).nav?.articles || 'Articles'}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/gallery" className="block py-2 px-4" onClick={toggleMenu}>
+                                    {(messages as any).nav?.gallery || 'Gallery'}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/templates" className="block py-2 px-4" onClick={toggleMenu}>
+                                    {(messages as any).nav?.templates || 'Templates'}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/agreement" className="block py-2 px-4" onClick={toggleMenu}>
+                                    {(messages as any).nav?.agreement || 'Agreement'}
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
                 )}
             </div>
         </NextIntlClientProvider>

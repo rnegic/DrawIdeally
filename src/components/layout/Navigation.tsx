@@ -11,12 +11,16 @@ const Navigation = () => {
     return (
         <nav className="flex h-24">
             <div className="max-w-5xl container mx-auto flex justify-between items-center">
-                <Link href="/">
-                    <div className="flex gap-3 text-xl ml-4">
-                        <Image src="/brush.png" alt='drawideally' width={500} height={500} className='w-7 h-7' />
-                        {t("nav.brand")}
-                    </div>
-                </Link>
+                <div className='flex gap-5'>
+                    <Link href="/">
+                        <div className="flex gap-3 text-xl ml-4">
+                            <Image src="/brush.png" alt='drawideally' width={500} height={500} className='w-7 h-7' />
+                            {t("nav.brand")}
+                        </div>
+                    </Link>
+                    <LanguageSwitcher />
+                </div>
+
                 <ul className="hidden md:flex gap-8">
                     <li>
                         <Link href="/articles">
@@ -37,9 +41,6 @@ const Navigation = () => {
                         <Link href="/agreement">
                             {t("nav.agreement")}
                         </Link>
-                    </li>
-                    <li>
-                        <LanguageSwitcher />
                     </li>
                 </ul>
 

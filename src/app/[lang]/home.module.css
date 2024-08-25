@@ -130,3 +130,12 @@
         font-weight: normal;
     }
 }
+
+@media (max-width: 380px) {
+    .maintext {
+        font-size: 40px;
+    }
+    .additionalText {
+        font-size: 24px;
+    }
+}
