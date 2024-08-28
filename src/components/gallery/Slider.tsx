@@ -19,7 +19,7 @@ const Slider = () => {
         <div className={styles.sliderTrack}>
           {images.map((image, index) => (
             <div key={index} className={styles.slide}>
-              <Image src={image} alt="art" className={styles.img} width={350} height={350} />
+              <Image src={image} alt="art" className={styles.img} width={300} height={300} />
             </div>
           ))}
         </div>

@@ -21,8 +21,8 @@ const CategoryCard = ({ image, title, description, categoryKey }: CategoryCardPr
         <div className="w-56 rounded-xl overflow-hidden shadow-lg cursor-pointer" onClick={handleClick}>
             <Image
                 src={image}
-                width={1024}
-                height={1024}
+                width={224}
+                height={224}
                 alt="Category Image"
                 className="object-cover"
             />

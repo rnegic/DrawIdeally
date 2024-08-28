@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
-import LanguageSwitcher from './LanguageSwitcher';
 
 const MobileNavigation = () => {
     const [isOpen, setIsOpen] = useState(false);

@@ -1,3 +1,8 @@
+.gradientFirst,
+.gradientSecond {
+    color: #0027b6;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -43,6 +48,7 @@
 
 .gradientFirst {
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(45deg, #0027b6, #42c9ff, #4776E6);
     background-size: 400% 400%;
@@ -51,32 +57,11 @@
 
 .gradientSecond {
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(45deg, #3494E6, #CB80FF);
     background-size: 400% 400%;
     animation: animate 7s ease infinite;
-}
-
-@keyframes animate {
-    0% {
-        background-position: 0 0;
-    }
-
-    25% {
-        background-position: 100% 0;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    75% {
-        background-position: 0 100%;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
 }
 
 @media (max-width: 1196px) {
@@ -85,6 +70,7 @@
         width: 380px;
         height: 400px;
     }
+
     .textCol {
         margin-top: 50px;
     }
@@ -119,12 +105,15 @@
     .image {
         display: none;
     }
+
     .sliderText {
         font-size: 26px;
     }
+
     .textCol {
         margin-left: 4px;
     }
+
     .additionalText {
         font-size: 24px;
         font-weight: normal;
@@ -135,7 +124,30 @@
     .maintext {
         font-size: 40px;
     }
+
     .additionalText {
         font-size: 24px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    25% {
+        background-position: 100% 0;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 0 100%;
+    }
+
+    100% {
+        background-position: 0 0;
     }
 }
