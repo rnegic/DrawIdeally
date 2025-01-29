@@ -7,6 +7,7 @@ import GlowingButton from "@/components/layout/GlowingButton";
 import useIdeaStore from '../../../store/IdeaStore';
 import { NextIntlClientProvider } from 'next-intl';
 import { usePathname } from 'next/navigation';
+import useLocaleStore from "@/store/LocaleStore";
 
 type Messages = {
     Index: {
@@ -26,16 +27,17 @@ const GeneratePage = () => {
     useEffect(() => {
         setLoading(true);
         fetch(`/locales/${locale}.json`)
-            .then(res => res.json())
-            .then(data => {
-                setMessages(data);
-                setLoading(false);
-            })
-            .catch(error => {
-                console.error('Error loading translations:', error);
-                setLoading(false);
-            });
-    }, [locale]);
+          .then(res => res.json())
+          .then(data => {
+            setMessages(data);
+            setLoading(false);
+            useLocaleStore.setState({ locale });
+          })
+          .catch(error => {
+            console.error('Error loading translations:', error);
+            setLoading(false);
+          });
+      }, [locale]);
 
     const generatedIdea = useIdeaStore((state) => state.generatedIdea);
 
