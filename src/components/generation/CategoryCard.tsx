@@ -23,6 +23,7 @@ const CategoryCard = ({ image, title, description, categoryKey }: CategoryCardPr
                 src={image}
                 width={224}
                 height={224}
+                quality={45}
                 alt="Category Image"
                 className="object-cover"
             />

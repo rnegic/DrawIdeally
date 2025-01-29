@@ -13,6 +13,7 @@ const MobileNavigation = () => {
     const locale = pathname.split('/')[1] || 'ru';
 
     useEffect(() => {
+        console.log('useEffect triggered with locale:', locale);
         setLoading(true);
         fetch(`/locales/${locale}.json`)
             .then(res => res.json())
@@ -40,33 +41,29 @@ const MobileNavigation = () => {
 
                 <button
                     onClick={toggleMenu}
-                    className="focus:outline-none p-1 rounded-md z-20 relative"
+                    className="px-5 text-xl rounded-md z-20 relative"
                     aria-expanded={isOpen}
                 >
-                    {isOpen ? <span className="text-white">✕</span> : '☰'}
+                    {isOpen ? <span className="text-white">✕</span> : <span>☰</span>}
                 </button>
 
                 {isOpen && (
                     <div className="fixed inset-0 bg-black bg-opacity-80 z-10 flex items-center justify-center">
                         <ul className="text-center space-y-6 text-white text-2xl">
                             <li>
-                                <Link href="/articles" className="block py-2 px-4" onClick={toggleMenu}>
-                                    {(messages as any).nav?.articles || 'Articles'}
+                                <Link href={`/${locale}/generate`} className="block py-2 px-4" onClick={toggleMenu}>
+                                    {(messages as any).Index.nav?.ideas || 'Ideas'}
+
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/gallery" className="block py-2 px-4" onClick={toggleMenu}>
-                                    {(messages as any).nav?.gallery || 'Gallery'}
+                                <Link href={`/${locale}/gallery`} className="block py-2 px-4" onClick={toggleMenu}>
+                                    {(messages as any).Index.nav?.gallery || 'Gallery'}
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/templates" className="block py-2 px-4" onClick={toggleMenu}>
-                                    {(messages as any).nav?.templates || 'Templates'}
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/agreement" className="block py-2 px-4" onClick={toggleMenu}>
-                                    {(messages as any).nav?.agreement || 'Agreement'}
+                                <Link href={`/${locale}/agreement`} className="block py-2 px-4" onClick={toggleMenu}>
+                                    {(messages as any).Index.nav?.agreement || 'Agreement'}
                                 </Link>
                             </li>
                         </ul>

@@ -1,12 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import MobileNavigation from "@/components/layout/MobileNavigation";
 
 const Navigation = () => {
     const t = useTranslations("Index");
+    const locale = useLocale();
 
     return (
         <nav className="flex h-24">
@@ -21,24 +22,19 @@ const Navigation = () => {
                     <LanguageSwitcher />
                 </div>
 
-                <ul className="hidden md:flex gap-8">
+                <ul className="hidden md:flex gap-8 px-6 text-lg">
                     <li>
-                        <Link href="/articles">
-                            {t("nav.articles")}
+                        <Link href={`/${locale}/generate`}>
+                            {t("nav.ideas")}
                         </Link>
                     </li>
                     <li>
-                        <Link href="/gallery">
+                        <Link href={`/${locale}/gallery`}>
                             {t("nav.gallery")}
                         </Link>
                     </li>
                     <li>
-                        <Link href="/templates">
-                            {t("nav.templates")}
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/agreement">
+                        <Link href={`/${locale}/agreement`}>
                             {t("nav.agreement")}
                         </Link>
                     </li>

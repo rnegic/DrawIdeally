@@ -34,7 +34,7 @@ export default function Home() {
             <Button text={t("page.buttonStart")} />
           </Link>
         </div>
-        <Image src="/woman.png" alt="woman" width={500} height={500} className={styles.image} />
+        <Image src="/woman.png" alt="woman" quality={50} width={500} height={500} className={styles.image} />
       </main>
       <div className="my-10">
         <Slider />

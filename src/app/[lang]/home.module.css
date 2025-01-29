@@ -74,6 +74,10 @@
     .textCol {
         margin-top: 50px;
     }
+
+    .main {
+        padding: 0 26px;
+    }
 }
 
 @media (max-width: 868px) {
@@ -117,6 +121,10 @@
     .additionalText {
         font-size: 24px;
         font-weight: normal;
+    }
+
+    .main {
+        padding: 0 4px;
     }
 }
 
